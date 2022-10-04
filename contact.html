@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="./">Home</a>
+                </li>
+
+                <li>
+                    <a href="./contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Contact Me</h1>
+    </header>
+    
+    <main>
+        <form action="./thanks.html" method="post" name="Contact Me" netlify>
+            <fieldset>
+                <legend>Your Information</legend>
+                <div>
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" name="firstName" id="firstName" required maxlength="10" minlength="2" placeholder="Owen">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" name="lastName" id="lastName" required maxlength="15" minlength="2" placeholder="McDane">
+                </div>
+                
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Contact Options</legend>
+
+                <div>
+                    <label for="email">email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="owe5@gmail.com">
+                </div>
+                <div>
+                    <label for="tel">Phone:</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="1(855)487-5132">
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Your Inquiry</legend>
+
+                <div>
+                <label for="inquiryType">What is your inquiry about?</label><br>
+                <select name="inquiry" id="inquiryType" required >
+                    <option> Select an inquiry option...</option>
+                    <option value="employment">Employment/Career Opportunity</option>
+                    <option value="business">Business Opportunity</option>
+                    <option value="freelance">Complaint</option>
+                    <option value="general">General Inquiry</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Your Message</label><br>
+                <textarea name="message" id="message" cols="30" rows="10" required placeholder="Your inquiry here"></textarea>
+            </div>
+            </fieldset>
+
+            <div>
+                <input type="Submit" value="Submit Inquiry">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>&copy;2022 Owen Dane</footer>
+</body>
+</html>
